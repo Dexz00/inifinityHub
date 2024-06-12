@@ -1,0 +1,218 @@
+--Load Menu
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ --Main
+local Window = Rayfield:CreateWindow({
+    Name = "InifinityHub",
+    LoadingTitle = "WELCOME INIFINITY HUB",
+    LoadingSubtitle = "By dexz0",
+    ConfigurationSaving = {
+       Enabled = false,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "InifinityHub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "ppdQZM6aFb", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "WELCOME INIFINITY HUB",
+       Subtitle = "Key System",
+       Note = "any other method of skipping the key will result in the script being blacklisted",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"InifinityHub"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+--TAB BLADE BALL
+ local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "AutoParry",
+   Callback = function()
+         xpcall(function()
+         loadstring(game:HttpGet("https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true"))()
+         end,function()
+         warn("Script error!")
+         end)
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "FFJ1",
+   Callback = function()
+      getgenv().IcognitoMode = true
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "VISUAL-BETA",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/402292c58fff6f1fa6bce8a7444c8a75.lua"))()
+      Rayfield:Destroy()
+   end,
+})
+
+--TAB PET SIM99
+ local Tab = Window:CreateTab("PET SIM99", 4483362458) -- Title, Image
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "SPEEDHUBX",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ahnadsgamer2/Speed-Hub-X/main/SpeedHubX"))()   
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "ZAPHUB",
+   Callback = function()
+      loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()   
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "HUGEGAMES",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/zerqhy/petsim99/main/hugesgames.io"))()
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+ local Button = Tab:CreateButton({
+   Name = "REDZHUB",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
+      Rayfield:Destroy()
+   end,
+})
+
+--TAB JAILBREAK
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+local Button = Tab:CreateButton({
+  Name = "UNIVERSALFARM",
+  Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular"))()
+     Rayfield:Destroy()
+  end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "PROJECTAUTO",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectAuto/main/AutoRobV4Release"))()
+      Rayfield:Destroy()
+   end,
+ })
+
+--TAB PROJECT SLAYERS
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+local Button = Tab:CreateButton({
+  Name = "ONIHUB",
+  Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Phyoue/psonis/main/OniHubMobile", true))();
+     Rayfield:Destroy()
+  end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "SHARKHUB V1",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0b7c256620e66c0e57008cff81b796c1.lua"))()
+      Rayfield:Destroy()
+   end,
+ })
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "EXHUB",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Dexz00/inifinityHub/main/excrack"))()
+      Rayfield:Destroy()
+   end,
+ })
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "SHARKHUB V2",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Dexz00/inifinityHub/main/sharkhub%20cracked"))()
+      Rayfield:Destroy()
+   end,
+ })
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "SKEEREDHUB",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+      Rayfield:Destroy()
+   end,
+ })
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "SYLEVONHUB",
+   Callback = function()
+      local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
+      repeat wait() until game:IsLoaded()
+      loadstring(game:HttpGet(LoaderUrl))()
+      Rayfield:Destroy()
+   end,
+ })
+
+--TAB DEMONFALL
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+local Button = Tab:CreateButton({
+  Name = "NOOBHUB",
+  Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/NOOBHUBX/DemonFall/main/NOOB%20HUB.Lua'),true))()
+     Rayfield:Destroy()
+  end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "LEADMARKER",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
+      Rayfield:Destroy()
+   end,
+ })
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "DEMONICHUB",
+   Callback = function()
+      getgenv().ValidateType = "Key"
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()
+      Rayfield:Destroy()
+   end,
+ })
+
+--TAB BLOX FRUIT
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+local Button = Tab:CreateButton({
+  Name = "",
+  Callback = function()
+     
+     Rayfield:Destroy()
+  end,
+})
+
+--TAB KING LEGACY
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+--BUTTON 
+local Button = Tab:CreateButton({
+  Name = "",
+  Callback = function()
+     
+     Rayfield:Destroy()
+  end,
+})
