@@ -1,0 +1,15 @@
+local placeId = game.PlaceId
+ 
+if placeId == 6152116144 or placeId == 13883279773 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NovazUwU/EXHub/main/Map1"))()
+elseif placeId == 11468159863 or placeId == 13881804983 or placeId == 13883059853 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NovazUwU/EXHub/main/Map2"))()
+elseif placeId == 5956785391 then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NovazUwU/EXHub/main/Menu"))()
+elseif placeId == 11468034852 then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NovazUwU/EXHub/main/Mugen"))()
+elseif placeId == 11468075017 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NovazUwU/EXHub/main/Ouw"))()
+else 
+    print("Incorrect Map")
+end
