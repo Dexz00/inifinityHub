@@ -69,7 +69,7 @@ local Button = Tab:CreateButton({
 })
 --BUTTON
 local Button = Tab:CreateButton({
-  Name = "",
+  Name = "BedolHub",
   Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Dungeons.lua"))()
       Rayfield:Destroy()
@@ -77,17 +77,41 @@ local Button = Tab:CreateButton({
 })
 --BUTTON
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "Zygarde",
    Callback = function()
-      
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/louismich4el/Zygarde/main/Protected%20zygarde.lua"))()
       Rayfield:Destroy()
    end,
 })
 --BUTTON 
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "Confused",
    Callback = function()
-      
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/samirayt/Whitelist/main/Whitelist%20Pago"))()
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "CombatHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://shz.al/AYJR"))()
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "LemonHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://paste.gg/p/anonymous/0425151104df470cb8203508e256b40a/files/aff63dcd12b04bfe8f6d9851eb6b2d3e/raw"))()
+      Rayfield:Destroy()
+   end,
+})
+--BUTTON 
+local Button = Tab:CreateButton({
+   Name = "REDzHUB",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
       Rayfield:Destroy()
    end,
 })
