@@ -55,7 +55,7 @@ local Window = Rayfield:CreateWindow({
  local Button = Tab:CreateButton({
    Name = "VISUAL-BETA",
    Callback = function()
-         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/402292c58fff6f1fa6bce8a7444c8a75.lua"))()
+         
       Rayfield:Destroy()
    end,
 })
@@ -69,33 +69,9 @@ local Button = Tab:CreateButton({
 })
 --BUTTON
 local Button = Tab:CreateButton({
-  Name = "BedolHub",
-  Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Dungeons.lua"))()
-      Rayfield:Destroy()
-   end,
-})
---BUTTON
-local Button = Tab:CreateButton({
-   Name = "Zygarde",
-   Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/louismich4el/Zygarde/main/Protected%20zygarde.lua"))()
-      Rayfield:Destroy()
-   end,
-})
---BUTTON 
-local Button = Tab:CreateButton({
    Name = "Confused",
    Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/samirayt/Whitelist/main/Whitelist%20Pago"))()
-      Rayfield:Destroy()
-   end,
-})
---BUTTON 
-local Button = Tab:CreateButton({
-   Name = "CombatHub",
-   Callback = function()
-         loadstring(game:HttpGet("https://shz.al/AYJR"))()
       Rayfield:Destroy()
    end,
 })
