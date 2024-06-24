@@ -1,0 +1,9 @@
+local ASRA = loadstring(game:HttpGet("https://raw.githubusercontent.com/ahsrua/AsraPelicanLib/main/AsraPelicanLib.lua"))()
+ASRA:Load("inifinityhub")
+
+if not isfile("key.txt") then writefile("key.txt", "no-key") end
+
+if ASRA:Validate():split("/")[1] == "valid" or ASRA:Validate(readfile("key.txt")):split("/")[1] == "valid" then
+else
+ASRA:UI(game:HttpGet("https://raw.githubusercontent.com/Dexz00/inifinityHub/main/main"))
+end
