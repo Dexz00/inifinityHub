@@ -474,3 +474,391 @@ end
 
 
 return Module
+
+--Load Menu
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "InifinityHub", HidePremium = false})
+
+--Blade Ball
+local Tab = Window:MakeTab({
+	Name = "Blade Ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "DungKee",
+	Callback = function()
+	loadstring(game:HttpGet("https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true"))()
+         end,function()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "FFJ1",
+	Callback = function()
+	getgenv().IcognitoMode = true
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "VISUAL-BETA",
+	Callback = function()
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ab6906cda6641c69a5f3a6c0c2ad6d80.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "AlchemyHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "Confused",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/samirayt/Whitelist/main/Whitelist%20Pago"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "LemonHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://paste.gg/p/anonymous/0425151104df470cb8203508e256b40a/files/aff63dcd12b04bfe8f6d9851eb6b2d3e/raw"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "RedzHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Pet Simulator 99
+local Tab = Window:MakeTab({
+	Name = "Pet Simulator 99",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "SpeedHubX",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ahnadsgamer2/Speed-Hub-X/main/"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "ZapHub",
+	Callback = function()
+	loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "HugeGames",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/zerqhy/petsim99/main/hugesgames.io"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Jailbreak
+local Tab = Window:MakeTab({
+	Name = "Pet Simulator 99",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "UniversalFarm",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "ProjectAutoV4",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectAuto/main/AutoRobV4Release"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Project Slayers 
+local Tab = Window:MakeTab({
+	Name = "Project Slayers",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "ExHubCracked",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Dexz00/inifinityHub/main/excrack"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--DemonFall
+local Tab = Window:MakeTab({
+	Name = "DemonFall",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "NoobHubX",
+	Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NOOBHUBX/DemonFall/main/NOOB%20HUB.Lua'),true))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "LeadMarker",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "DemonicHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Prosexy/Demonic-HUB-V2/main/DemonicHub_V2.lua", true))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Blox Fruit
+local Tab = Window:MakeTab({
+	Name = "Blox Fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "SpeedHubX",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "PearCatHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NguyenLam2504/pearcathub.lua/main/vaicapia.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "MinGamingNew",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyybeta/mingane/main/MinGamingNew.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "X-RayHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SeaBabyBF/X-rayse/main/X-RayHub"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "HiruHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/UpdateNewV2/main/HiruHub.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "ValkHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Scriptssz/Folder_Script/main/Valk_Hub"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "WindyHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ItzWindy01/WindyXBypass/main/Rewrite.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "AlchemyHub",
+	Callback = function()
+	_G.Aimbot = true
+         loadstring(game:HttpGet("https://alchemyhub.xyz/n.g"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "MatsuneHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Matsune/main/matssunehub.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "YmieHubV2",
+	Callback = function()
+	getgenv().Team = "Pirates"
+         getgenv().id = "1226743840325501060"
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/NhiYeuAnh/YMIE-HUB/main/YMIEHUBV2.txt"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "KeeHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nghia11n/Kee-Hub/main/keemain.lua"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "GalaxyXHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GalaxyTeamHub/Galaxy-Hub/main/GalaxyBloxFruit.lua"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "LunarXHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NguyenLam2504/LunarXHubNextGeneration/main/GameShit.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "RinXHub",
+	Callback = function()
+	loadstring(game:HttpGetAsync"https://github.com/RinXHub/RinX/raw/main/output.lua")() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "SeaGateHub",
+	Callback = function()
+	_G.Loader = true
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/SeaBabyBF/seamain/main/SeaGateNextGenz"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "ZinerHub",
+	Callback = function()
+	_G.LoadUiFast = false
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZINERHUB.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "MuxusHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MuxusTL/BloxFruits/main/MuxusHub_V2.lua"))() 
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--King Legacy
+local Tab = Window:MakeTab({
+	Name = "King Legacy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Button
+Tab:AddButton({
+	Name = "ArcHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "ZeeHub",
+	Callback = function()
+	loadstring(game:HttpGet('https://zuwz.me/Ls-Zee-Hub-KL'))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "BT Project",
+	Callback = function()
+	loadstring(game:HttpGetAsync("https://lua-library.btteam.net/script-auth.txt"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
+--Button
+Tab:AddButton({
+	Name = "HyperHub",
+	Callback = function()
+	repeat wait() until game:IsLoaded()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
+	OrionLib:Destroy()
+      		print("button pressed")
+  	end    
+})
