@@ -1,1 +1,37 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
 
+local win = DiscordLib:Window("InifinityHub")
+--Tab Credits
+local serv = win:Server("Preview", "")
+local lbls = serv:Channel("Credits")
+lbls:Label("credits to all script developers who are present on my script hub.")
+lbls:Label("discord.gg/ppdQZM6aFb")
+serv:Channel("by dexz0")
+--Main
+local serv = win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+--Blade Ball
+local btns = serv:Channel("Blade Ball")
+btns:Button(
+    "VISUAL-BETA",
+    function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+        DiscordLib:Destroy()
+    end
+)
+btns:Seperator()
+
+btns:Button(
+    "FFJ1",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+    end
+)
+btns:Seperator()
+
+btns:Button(
+    "EcpliseX",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JackCSTM/eclipsex/main/script"))()
+    end
+)
