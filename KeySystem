@@ -1,1 +1,153 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local GetKeyButton = Instance.new("TextButton")
+local CheckKeyButton = Instance.new("TextButton")
+local KeyTextBox = Instance.new("TextBox")
+local StatusLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Frame.BorderColor3 = Color3.fromRGB(103, 52, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.230842739, 0, 0.20614028, 0)
+Frame.Size = UDim2.new(0, 461, 0, 287)
+
+GetKeyButton.Name = "GetKeyButton"
+GetKeyButton.Parent = Frame
+GetKeyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetKeyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GetKeyButton.BorderSizePixel = 0
+GetKeyButton.Position = UDim2.new(0.21267052, 0, 0.641040027, 0)
+GetKeyButton.Size = UDim2.new(0, 139, 0, 50)
+GetKeyButton.Font = Enum.Font.SourceSans
+GetKeyButton.Text = "GetKey"
+GetKeyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKeyButton.TextSize = 14.000
+
+CheckKeyButton.Name = "CheckKeyButton"
+CheckKeyButton.Parent = Frame
+CheckKeyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckKeyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheckKeyButton.BorderSizePixel = 0
+CheckKeyButton.Position = UDim2.new(0.484686196, 0, 0.641039908, 0)
+CheckKeyButton.Size = UDim2.new(0, 139, 0, 50)
+CheckKeyButton.Font = Enum.Font.SourceSans
+CheckKeyButton.Text = "CheckKey"
+CheckKeyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CheckKeyButton.TextSize = 14.000
+
+KeyTextBox.Name = "KeyTextBox"
+KeyTextBox.Parent = Frame
+KeyTextBox.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KeyTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyTextBox.BorderSizePixel = 0
+KeyTextBox.Position = UDim2.new(0.281995654, 0, 0.41114983, 0)
+KeyTextBox.Size = UDim2.new(0, 200, 0, 39)
+KeyTextBox.Font = Enum.Font.SourceSans
+KeyTextBox.Text = ""
+KeyTextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeyTextBox.TextSize = 14.000
+
+StatusLabel.Name = "StatusLabel"
+StatusLabel.Parent = Frame
+StatusLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatusLabel.BackgroundTransparency = 1.000
+StatusLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StatusLabel.BorderSizePixel = 0
+StatusLabel.Position = UDim2.new(0.281995654, 0, 1.07665503, 0)
+StatusLabel.Size = UDim2.new(0, 200, 0, 42)
+StatusLabel.Font = Enum.Font.SourceSans
+StatusLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+StatusLabel.TextSize = 14.000
+
+-- Scripts:
+
+local function WVWZO_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local PandaAuth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Panda-Repositories/PandaKS_Libraries/main/library/LuaLib/ROBLOX/VAL", true))()
+	
+	local frame = script.Parent:WaitForChild("Frame")
+	local getKeyButton = frame:WaitForChild("GetKeyButton")
+	local keyTextBox = frame:WaitForChild("KeyTextBox")
+	local checkKeyButton = frame:WaitForChild("CheckKeyButton")
+	local statusLabel = frame:WaitForChild("StatusLabel")
+	
+	-- Deixe o statusLabel invisível por padrão
+	statusLabel.Visible = false
+	
+	local InternalTable = {
+		Service = "inifinityhub", -- Nome do serviço atualizado
+		APIToken = "jB4DC6JTXS0kcxcl", -- Token da API atualizado
+		VigenereKey = tostring({}) .. tostring(function() end) .. tostring(workspace["GetServerTimeNow" .. ("\0"):rep(math.random(2, 32))](workspace) + math.random(os.clock(), 999999999 or os.time())) .. ("\0"):rep(math.random(2, 32) % os.time() + os.clock()),
+		TrueEndpoint = tostring({}) .. tostring(function() end) .. tostring(workspace["GetServerTimeNow" .. ("\0"):rep(math.random(2, 32))](workspace) + math.random(os.clock(), 999999999 or os.time())) .. ("\0"):rep(math.random(2, 32) % os.time() + os.clock()),
+		FalseEndpoint = tostring({}) .. tostring(function() end) .. tostring(workspace["GetServerTimeNow" .. ("\0"):rep(math.random(2, 32))](workspace) + math.random(os.clock(), 999999999 or os.time())) .. ("\0"):rep(math.random(2, 32) % os.time() + os.clock()),
+		Webhook = nil,
+		Debug = false 
+	}
+	
+	local Internal = setmetatable({}, {
+		__index = function(self, key)
+			return rawget(InternalTable, key)
+		end;
+		__newindex = function(self, key, value)
+			while true do end; repeat until false; print(debug.traceback()) return
+		end;
+		__tostring = function(self)
+			while true do end; repeat until false; print(debug.traceback()) return
+		end;
+	})
+	
+	PandaAuth:SetInternal(Internal)
+	
+	local function validateKey(key)
+		local result = PandaAuth:ValidateKey(key)
+	
+		if result and result["Validated"] then
+			return true, "Chave correta!"
+		else
+			return false, "Chave incorreta."
+		end
+	end
+	
+	-- Função para copiar texto para a área de transferência (apenas em ambiente local)
+	local function copyToClipboard(text)
+		if setclipboard then
+			setclipboard(text)
+		end
+	end
+	
+	-- Ação ao clicar no botão de obter chave
+	getKeyButton.MouseButton1Click:Connect(function()
+		local newKey = "https://pandadevelopment.net/getkey?service=inifinityhub&hwid=011202e4-1993-4d13-97f8-0d6b7d899a51" -- Gere sua chave aqui
+		copyToClipboard(newKey)
+		statusLabel.Text = "Chave copiada para a área de transferência: " .. newKey
+		statusLabel.TextColor3 = Color3.new(0, 1, 0) -- Verde para sucesso
+		statusLabel.Visible = true
+	end)
+	
+	-- Ação ao clicar no botão de verificar chave
+	checkKeyButton.MouseButton1Click:Connect(function()
+		local inputKey = keyTextBox.Text
+		local isValid, message = validateKey(inputKey)
+		statusLabel.Text = message
+		if isValid then
+			statusLabel.TextColor3 = Color3.new(0, 1, 0) -- Verde para sucesso
+		else
+			statusLabel.TextColor3 = Color3.new(1, 0, 0) -- Vermelho para erro
+		end
+		statusLabel.Visible = true
+	end)
+	
+end
+coroutine.wrap(WVWZO_fake_script)()
