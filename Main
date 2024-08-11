@@ -4,35 +4,42 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local menu = Instance.new("Frame")
 local AutoFarm = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
+local AutoBox = Instance.new("Frame")
+local Ativodesativo = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local Teleports = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Frame_3 = Instance.new("Frame")
+local Teleports = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local AIMBOT = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local NameHub = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
+local Designer = Instance.new("TextLabel")
+local Scripter = Instance.new("TextLabel")
+local Discord = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(167, 43, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.275675684, 0, 0.301470578, 0)
-Frame.Size = UDim2.new(0, 580, 0, 324)
+menu.Name = "menu"
+menu.Parent = ScreenGui
+menu.BackgroundColor3 = Color3.fromRGB(167, 43, 255)
+menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+menu.BorderSizePixel = 0
+menu.Position = UDim2.new(0.275675684, 0, 0.301470578, 0)
+menu.Size = UDim2.new(0, 580, 0, 324)
 
 AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = Frame
+AutoFarm.Parent = menu
 AutoFarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AutoFarm.BackgroundTransparency = 0.450
 AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -48,24 +55,49 @@ AutoFarm.TextSize = 19.000
 UICorner.CornerRadius = UDim.new(0, 50)
 UICorner.Parent = AutoFarm
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
-Frame_2.BackgroundTransparency = 0.750
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.344827592, 0, 0, 0)
-Frame_2.Size = UDim2.new(0, 380, 0, 324)
+AutoBox.Name = "AutoBox"
+AutoBox.Parent = AutoFarm
+AutoBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoBox.BackgroundTransparency = 1.000
+AutoBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoBox.BorderSizePixel = 0
+AutoBox.Position = UDim2.new(1.38888884, 0, 0, 0)
+AutoBox.Size = UDim2.new(0, 266, 0, 25)
+AutoBox.Visible = false
 
-UICorner_2.CornerRadius = UDim.new(0, 25)
-UICorner_2.Parent = Frame_2
+Ativodesativo.Name = "Ativo/desativo"
+Ativodesativo.Parent = AutoBox
+Ativodesativo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ativodesativo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ativodesativo.BorderSizePixel = 0
+Ativodesativo.Position = UDim2.new(-0.0871502236, 0, -0.198921457, 0)
+Ativodesativo.Size = UDim2.new(0, 304, 0, 37)
+Ativodesativo.Font = Enum.Font.Bangers
+Ativodesativo.Text = ""
+Ativodesativo.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ativodesativo.TextSize = 25.000
+
+UICorner_2.CornerRadius = UDim.new(0, 50)
+UICorner_2.Parent = Ativodesativo
+
+Frame.Parent = menu
+Frame.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Frame.BackgroundTransparency = 0.750
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.346551716, 0, 0, 0)
+Frame.Size = UDim2.new(0, 380, 0, 324)
+
+UICorner_3.CornerRadius = UDim.new(0, 25)
+UICorner_3.Parent = Frame
 
 Teleports.Name = "Teleports"
-Teleports.Parent = Frame
+Teleports.Parent = menu
 Teleports.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Teleports.BackgroundTransparency = 0.450
 Teleports.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Teleports.BorderSizePixel = 0
-Teleports.Position = UDim2.new(0.0155172413, 0, 0.357804567, 0)
+Teleports.Position = UDim2.new(0.0172413792, 0, 0.225088522, 0)
 Teleports.Size = UDim2.new(0, 180, 0, 36)
 Teleports.Font = Enum.Font.Unknown
 Teleports.LineHeight = 1.030
@@ -73,156 +105,285 @@ Teleports.Text = "Teleports"
 Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
 Teleports.TextSize = 19.000
 
-UICorner_3.CornerRadius = UDim.new(0, 50)
-UICorner_3.Parent = Teleports
+UICorner_4.CornerRadius = UDim.new(0, 50)
+UICorner_4.Parent = Teleports
 
-Frame_3.Parent = Frame
-Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BackgroundTransparency = 0.750
-Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(-0.00172413792, 0, 0, 0)
-Frame_3.Size = UDim2.new(0, 200, 0, 324)
-
-UICorner_4.CornerRadius = UDim.new(0, 25)
-UICorner_4.Parent = Frame_3
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0948275849, 0, 0.950617313, 0)
-TextLabel.Size = UDim2.new(0, 88, 0, 16)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "V 1.0 (BETA)"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
+Frame_2.Parent = menu
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BackgroundTransparency = 0.750
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.00172413792, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 200, 0, 324)
 
 UICorner_5.CornerRadius = UDim.new(0, 25)
-UICorner_5.Parent = Frame
+UICorner_5.Parent = Frame_2
 
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BorderSizePixel = 2
-TextLabel_2.Position = UDim2.new(0, 0, -0.0308641978, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "UniqueHUB"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 24.000
+UICorner_6.CornerRadius = UDim.new(0, 25)
+UICorner_6.Parent = menu
 
-AIMBOT.Name = "AIMBOT"
-AIMBOT.Parent = Frame
-AIMBOT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AIMBOT.BackgroundTransparency = 0.450
-AIMBOT.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AIMBOT.BorderSizePixel = 0
-AIMBOT.Position = UDim2.new(0.0172413792, 0, 0.224670038, 0)
-AIMBOT.Size = UDim2.new(0, 180, 0, 36)
-AIMBOT.Font = Enum.Font.Unknown
-AIMBOT.LineHeight = 1.030
-AIMBOT.Text = "AIMBOT"
-AIMBOT.TextColor3 = Color3.fromRGB(255, 255, 255)
-AIMBOT.TextSize = 19.000
+NameHub.Name = "NameHub"
+NameHub.Parent = menu
+NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameHub.BackgroundTransparency = 1.000
+NameHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NameHub.BorderSizePixel = 2
+NameHub.Position = UDim2.new(0, 0, -0.0308641978, 0)
+NameHub.Size = UDim2.new(0, 200, 0, 50)
+NameHub.Font = Enum.Font.Unknown
+NameHub.Text = "UniqueHUB"
+NameHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameHub.TextSize = 24.000
 
-UICorner_6.CornerRadius = UDim.new(0, 50)
-UICorner_6.Parent = AIMBOT
+Credits.Name = "Credits"
+Credits.Parent = menu
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.377586216, 0, 0.0246913582, 0)
+Credits.Size = UDim2.new(0, 337, 0, 300)
+
+Designer.Name = "Designer"
+Designer.Parent = Credits
+Designer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Designer.BackgroundTransparency = 1.000
+Designer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Designer.BorderSizePixel = 0
+Designer.Position = UDim2.new(0.208728105, 0, 0.0439506024, 0)
+Designer.Size = UDim2.new(0, 203, 0, 44)
+Designer.Font = Enum.Font.Unknown
+Designer.Text = "Designer UI: Dexz"
+Designer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Designer.TextSize = 19.000
+
+Scripter.Name = "Scripter"
+Scripter.Parent = Credits
+Scripter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripter.BackgroundTransparency = 1.000
+Scripter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripter.BorderSizePixel = 0
+Scripter.Position = UDim2.new(0.244336411, 0, 0.127283931, 0)
+Scripter.Size = UDim2.new(0, 178, 0, 33)
+Scripter.Font = Enum.Font.Unknown
+Scripter.Text = "Scripter: Dexz / VulgoMr71"
+Scripter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripter.TextSize = 19.000
+
+Discord.Name = "Discord"
+Discord.Parent = Credits
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.107837893, 0, 0.23728393, 0)
+Discord.Size = UDim2.new(0, 271, 0, 45)
+Discord.Font = Enum.Font.Unknown
+Discord.Text = "discord.gg/dexzcommunity"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextSize = 19.000
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0687258691, 0, 0.178921565, 0)
+ImageButton.Size = UDim2.new(0, 48, 0, 50)
+ImageButton.Image = "rbxassetid://18900809386"
+
+UICorner_7.CornerRadius = UDim.new(0, 50)
+UICorner_7.Parent = ImageButton
 
 -- Scripts:
 
-local function BBIZVL_fake_script() -- AutoFarm.LocalScript 
-	local script = Instance.new('LocalScript', AutoFarm)
+local function PLDXJNJ_fake_script() -- Ativodesativo.Status 
+	local script = Instance.new('LocalScript', Ativodesativo)
 
 	local button = script.Parent
+	local isActive = false -- Estado inicial (desativado)
 	
-	-- Configurações de animação
-	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
-	local originalSize = button.Size -- Tamanho original do botão
+	-- Configurações do botão
+	local activeColor = Color3.fromRGB(0, 255, 0) -- Verde para ativado
+	local inactiveColor = Color3.fromRGB(255, 0, 0) -- Vermelho para desativado
 	
-	-- Animação quando o mouse entra no botão
-	button.MouseEnter:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	-- Atualiza o botão com base no estado
+	local function updateButton()
+		if isActive then
+			button.BackgroundColor3 = activeColor
+			button.Text = "AutoBox"
+		else
+			button.BackgroundColor3 = inactiveColor
+			button.Text = "AutoBox"
+		end
+	end
+	
+	-- Alterna o estado ao clicar no botão
+	button.MouseButton1Click:Connect(function()
+		isActive = not isActive
+		updateButton()
 	end)
 	
-	-- Animação quando o mouse sai do botão
-	button.MouseLeave:Connect(function()
-		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
+	-- Configura o estado inicial do botão
+	updateButton()
+	
+end
+coroutine.wrap(PLDXJNJ_fake_script)()
+local function EAPR_fake_script() -- menu.MoveMenu 
+	local script = Instance.new('LocalScript', menu)
+
+	local menu = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local dragging = false
+	local dragStart
+	local startPos
+	
+	-- Função para atualizar a posição do menu
+	local function update(input)
+		local delta = input.Position - dragStart
+		menu.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	-- Quando o arrasto começa
+	menu.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = menu.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
 	end)
 	
-	-- Animação quando o botão é clicado
-	button.MouseButton1Down:Connect(function()
-		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
+	-- Quando o arrasto está em andamento
+	menu.InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			update(input)
+		end
 	end)
 	
-	-- Retorno ao tamanho original quando o botão é solto
-	button.MouseButton1Up:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	-- Quando o arrasto termina
+	userInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
 	end)
 	
 end
-coroutine.wrap(BBIZVL_fake_script)()
-local function UDRXLDY_fake_script() -- Teleports.LocalScript 
-	local script = Instance.new('LocalScript', Teleports)
+coroutine.wrap(EAPR_fake_script)()
+local function FYSUXZ_fake_script() -- menu.HideButtons 
+	local script = Instance.new('LocalScript', menu)
 
-	local button = script.Parent
+	local autoFarmButton = script.Parent:WaitForChild("AutoFarm")
+	local teleportsButton = script.Parent:WaitForChild("Teleports")
 	
-	-- Configurações de animação
-	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
-	local originalSize = button.Size -- Tamanho original do botão
+	local autoBox = autoFarmButton:WaitForChild("AutoBox")
+	local creditsFrame = script.Parent:WaitForChild("Credits")
 	
-	-- Animação quando o mouse entra no botão
-	button.MouseEnter:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	-- Inicializa a visibilidade do AutoBox e uma variável para verificar se os créditos foram ocultados
+	autoBox.Visible = false
+	local creditsHidden = false
+	
+	-- Função para mostrar o AutoBox e ocultar outros menus
+	local function showAutoBox()
+		autoBox.Visible = true
+		if not creditsHidden then
+			creditsFrame.Visible = false
+			creditsHidden = true -- Marcar que os créditos foram ocultados
+		end
+	end
+	
+	-- Função para ocultar o AutoBox
+	local function hideAutoBox()
+		autoBox.Visible = false
+		if not creditsHidden then
+			creditsFrame.Visible = false
+			creditsHidden = true -- Marcar que os créditos foram ocultados
+		end
+	end
+	
+	-- Evento ao clicar no botão AutoFarm
+	autoFarmButton.MouseButton1Click:Connect(function()
+		showAutoBox() -- Exibe o AutoBox
 	end)
 	
-	-- Animação quando o mouse sai do botão
-	button.MouseLeave:Connect(function()
-		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
-	end)
-	
-	-- Animação quando o botão é clicado
-	button.MouseButton1Down:Connect(function()
-		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
-	end)
-	
-	-- Retorno ao tamanho original quando o botão é solto
-	button.MouseButton1Up:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	-- Evento ao clicar no botão Teleports
+	teleportsButton.MouseButton1Click:Connect(function()
+		hideAutoBox() -- Oculta o AutoBox
 	end)
 	
 end
-coroutine.wrap(UDRXLDY_fake_script)()
-local function LYRG_fake_script() -- AIMBOT.LocalScript 
-	local script = Instance.new('LocalScript', AIMBOT)
+coroutine.wrap(FYSUXZ_fake_script)()
+local function POYMNA_fake_script() -- ImageButton.MoveIcon 
+	local script = Instance.new('LocalScript', ImageButton)
 
 	local button = script.Parent
+	local userInputService = game:GetService("UserInputService")
+	local dragging = false
+	local startPosition = UDim2.new(0, 0, 0, 0)
+	local startMousePosition = Vector2.new()
 	
-	-- Configurações de animação
-	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
-	local originalSize = button.Size -- Tamanho original do botão
+	-- Função para começar a arrastar o botão
+	local function startDragging(input)
+		dragging = true
+		startPosition = button.Position
+		startMousePosition = input.Position
+	end
 	
-	-- Animação quando o mouse entra no botão
-	button.MouseEnter:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	-- Função para arrastar o botão
+	local function drag(input)
+		if dragging then
+			local delta = input.Position - startMousePosition
+			button.Position = UDim2.new(startPosition.X.Scale, startPosition.X.Offset + delta.X, startPosition.Y.Scale, startPosition.Y.Offset + delta.Y)
+		end
+	end
+	
+	-- Função para parar de arrastar o botão
+	local function stopDragging()
+		dragging = false
+	end
+	
+	-- Conectar eventos de início e fim de arrasto
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			startDragging(input)
+		end
 	end)
 	
-	-- Animação quando o mouse sai do botão
-	button.MouseLeave:Connect(function()
-		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
+	userInputService.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			drag(input)
+		end
 	end)
 	
-	-- Animação quando o botão é clicado
-	button.MouseButton1Down:Connect(function()
-		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
-	end)
-	
-	-- Retorno ao tamanho original quando o botão é solto
-	button.MouseButton1Up:Connect(function()
-		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	userInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			stopDragging()
+		end
 	end)
 	
 end
-coroutine.wrap(LYRG_fake_script)()
+coroutine.wrap(POYMNA_fake_script)()
+local function GFWLLP_fake_script() -- ImageButton.HideMenu 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local button = script.Parent -- Referência ao ImageButton
+	local menu = button.Parent:WaitForChild("menu") -- Referência ao menu
+	
+	-- Inicializa a visibilidade do menu
+	local isMenuVisible = menu.Visible
+	
+	-- Função para alternar a visibilidade do menu
+	local function toggleMenuVisibility()
+		isMenuVisible = not isMenuVisible
+		menu.Visible = isMenuVisible
+	end
+	
+	-- Conecta a função ao evento de clique do botão
+	button.MouseButton1Click:Connect(toggleMenuVisibility)
+	
+end
+coroutine.wrap(GFWLLP_fake_script)()
