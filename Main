@@ -1,37 +1,228 @@
-local DiscordLib =
-    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+-- Gui to Lua
+-- Version: 3.2
 
-local win = DiscordLib:Window("InifinityHub")
---Tab Credits
-local serv = win:Server("Preview", "")
-local lbls = serv:Channel("Credits")
-lbls:Label("credits to all script developers who are present on my script hub.")
-lbls:Label("discord.gg/ppdQZM6aFb")
-serv:Channel("by dexz0")
---Main
-local serv = win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
---Blade Ball
-local btns = serv:Channel("Blade Ball")
-btns:Button(
-    "VISUAL-BETA",
-    function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
-        DiscordLib:Destroy()
-    end
-)
-btns:Seperator()
+-- Instances:
 
-btns:Button(
-    "FFJ1",
-    function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
-    end
-)
-btns:Seperator()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local AutoFarm = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local AIMBOT = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
-btns:Button(
-    "EcpliseX",
-    function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/JackCSTM/eclipsex/main/script"))()
-    end
-)
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(167, 43, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.275675684, 0, 0.301470578, 0)
+Frame.Size = UDim2.new(0, 580, 0, 324)
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Frame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.BackgroundTransparency = 0.450
+AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0.0155172413, 0, 0.0925925896, 0)
+AutoFarm.Size = UDim2.new(0, 180, 0, 36)
+AutoFarm.Font = Enum.Font.Unknown
+AutoFarm.LineHeight = 1.030
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextSize = 19.000
+
+UICorner.CornerRadius = UDim.new(0, 50)
+UICorner.Parent = AutoFarm
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Frame_2.BackgroundTransparency = 0.750
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.344827592, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 380, 0, 324)
+
+UICorner_2.CornerRadius = UDim.new(0, 25)
+UICorner_2.Parent = Frame_2
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Frame
+Teleports.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Teleports.BackgroundTransparency = 0.450
+Teleports.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0.0155172413, 0, 0.357804567, 0)
+Teleports.Size = UDim2.new(0, 180, 0, 36)
+Teleports.Font = Enum.Font.Unknown
+Teleports.LineHeight = 1.030
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 19.000
+
+UICorner_3.CornerRadius = UDim.new(0, 50)
+UICorner_3.Parent = Teleports
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BackgroundTransparency = 0.750
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.00172413792, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 200, 0, 324)
+
+UICorner_4.CornerRadius = UDim.new(0, 25)
+UICorner_4.Parent = Frame_3
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0948275849, 0, 0.950617313, 0)
+TextLabel.Size = UDim2.new(0, 88, 0, 16)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "V 1.0 (BETA)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 25)
+UICorner_5.Parent = Frame
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderSizePixel = 2
+TextLabel_2.Position = UDim2.new(0, 0, -0.0308641978, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "UniqueHUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 24.000
+
+AIMBOT.Name = "AIMBOT"
+AIMBOT.Parent = Frame
+AIMBOT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AIMBOT.BackgroundTransparency = 0.450
+AIMBOT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AIMBOT.BorderSizePixel = 0
+AIMBOT.Position = UDim2.new(0.0172413792, 0, 0.224670038, 0)
+AIMBOT.Size = UDim2.new(0, 180, 0, 36)
+AIMBOT.Font = Enum.Font.Unknown
+AIMBOT.LineHeight = 1.030
+AIMBOT.Text = "AIMBOT"
+AIMBOT.TextColor3 = Color3.fromRGB(255, 255, 255)
+AIMBOT.TextSize = 19.000
+
+UICorner_6.CornerRadius = UDim.new(0, 50)
+UICorner_6.Parent = AIMBOT
+
+-- Scripts:
+
+local function BBIZVL_fake_script() -- AutoFarm.LocalScript 
+	local script = Instance.new('LocalScript', AutoFarm)
+
+	local button = script.Parent
+	
+	-- Configurações de animação
+	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
+	local originalSize = button.Size -- Tamanho original do botão
+	
+	-- Animação quando o mouse entra no botão
+	button.MouseEnter:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o mouse sai do botão
+	button.MouseLeave:Connect(function()
+		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o botão é clicado
+	button.MouseButton1Down:Connect(function()
+		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
+	end)
+	
+	-- Retorno ao tamanho original quando o botão é solto
+	button.MouseButton1Up:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	end)
+	
+end
+coroutine.wrap(BBIZVL_fake_script)()
+local function UDRXLDY_fake_script() -- Teleports.LocalScript 
+	local script = Instance.new('LocalScript', Teleports)
+
+	local button = script.Parent
+	
+	-- Configurações de animação
+	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
+	local originalSize = button.Size -- Tamanho original do botão
+	
+	-- Animação quando o mouse entra no botão
+	button.MouseEnter:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o mouse sai do botão
+	button.MouseLeave:Connect(function()
+		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o botão é clicado
+	button.MouseButton1Down:Connect(function()
+		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
+	end)
+	
+	-- Retorno ao tamanho original quando o botão é solto
+	button.MouseButton1Up:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	end)
+	
+end
+coroutine.wrap(UDRXLDY_fake_script)()
+local function LYRG_fake_script() -- AIMBOT.LocalScript 
+	local script = Instance.new('LocalScript', AIMBOT)
+
+	local button = script.Parent
+	
+	-- Configurações de animação
+	local hoverSize = UDim2.new(0, 190, 0, 40) -- Tamanho quando o mouse estiver sobre o botão
+	local originalSize = button.Size -- Tamanho original do botão
+	
+	-- Animação quando o mouse entra no botão
+	button.MouseEnter:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o mouse sai do botão
+	button.MouseLeave:Connect(function()
+		button:TweenSize(originalSize, "Out", "Quad", 0.2, true)
+	end)
+	
+	-- Animação quando o botão é clicado
+	button.MouseButton1Down:Connect(function()
+		button:TweenSize(hoverSize + UDim2.new(0, 5, 0, 5), "Out", "Quad", 0.1, true)
+	end)
+	
+	-- Retorno ao tamanho original quando o botão é solto
+	button.MouseButton1Up:Connect(function()
+		button:TweenSize(hoverSize, "Out", "Quad", 0.1, true)
+	end)
+	
+end
+coroutine.wrap(LYRG_fake_script)()
