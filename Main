@@ -1,283 +1,437 @@
--- Gui to Lua
--- Version: 3.2
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
--- Instances:
+-- Instances: 26 | Scripts: 5 | Modules: 0
+local G2L = {};
 
-local ScreenGui = Instance.new("ScreenGui")
-local menu = Instance.new("Frame")
-local AutoFarm = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local AutoBox = Instance.new("Frame")
-local Ativodesativo = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local Teleports = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local UICorner_6 = Instance.new("UICorner")
-local NameHub = Instance.new("TextLabel")
-local Credits = Instance.new("Frame")
-local Designer = Instance.new("TextLabel")
-local Scripter = Instance.new("TextLabel")
-local Discord = Instance.new("TextLabel")
-local ImageButton = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
---Properties:
+-- StarterGui.ScreenGui.menu
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(168, 44, 255);
+G2L["2"]["Size"] = UDim2.new(0, 580, 0, 324);
+G2L["2"]["Position"] = UDim2.new(0.27568, 0, 0.30147, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[menu]];
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+-- StarterGui.ScreenGui.menu.AutoFarm
+G2L["3"] = Instance.new("TextButton", G2L["2"]);
+G2L["3"]["LineHeight"] = 1.03;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 19;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["3"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["3"]["BackgroundTransparency"] = 0.45;
+G2L["3"]["Name"] = [[AutoFarm]];
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[AutoFarm]];
+G2L["3"]["Position"] = UDim2.new(0.01552, 0, 0.09259, 0);
 
-menu.Name = "menu"
-menu.Parent = ScreenGui
-menu.BackgroundColor3 = Color3.fromRGB(167, 43, 255)
-menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
-menu.BorderSizePixel = 0
-menu.Position = UDim2.new(0.275675684, 0, 0.301470578, 0)
-menu.Size = UDim2.new(0, 580, 0, 324)
+-- StarterGui.ScreenGui.menu.AutoFarm.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["3"]);
+G2L["4"]["CornerRadius"] = UDim.new(0, 50);
 
-AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = menu
-AutoFarm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AutoFarm.BackgroundTransparency = 0.450
-AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoFarm.BorderSizePixel = 0
-AutoFarm.Position = UDim2.new(0.0155172413, 0, 0.0925925896, 0)
-AutoFarm.Size = UDim2.new(0, 180, 0, 36)
-AutoFarm.Font = Enum.Font["LuckiestGuy"]
-AutoFarm.LineHeight = 1.030
-AutoFarm.Text = "AutoFarm"
-AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarm.TextSize = 19.000
+-- StarterGui.ScreenGui.menu.AutoFarm.AutoBox
+G2L["5"] = Instance.new("Frame", G2L["3"]);
+G2L["5"]["Visible"] = false;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(0, 266, 0, 25);
+G2L["5"]["Position"] = UDim2.new(1.38889, 0, 0, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[AutoBox]];
+G2L["5"]["BackgroundTransparency"] = 1;
 
-UICorner.CornerRadius = UDim.new(0, 50)
-UICorner.Parent = AutoFarm
+-- StarterGui.ScreenGui.menu.AutoFarm.AutoBox.Ativo/desativo
+G2L["6"] = Instance.new("TextButton", G2L["5"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 25;
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Bangers.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 304, 0, 37);
+G2L["6"]["Name"] = [[Ativo/desativo]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[]];
+G2L["6"]["Position"] = UDim2.new(-0.08715, 0, -0.19892, 0);
 
-AutoBox.Name = "AutoBox"
-AutoBox.Parent = AutoFarm
-AutoBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoBox.BackgroundTransparency = 1.000
-AutoBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBox.BorderSizePixel = 0
-AutoBox.Position = UDim2.new(1.38888884, 0, 0, 0)
-AutoBox.Size = UDim2.new(0, 266, 0, 25)
-AutoBox.Visible = false
+-- StarterGui.ScreenGui.menu.AutoFarm.AutoBox.Ativo/desativo.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
+G2L["7"]["CornerRadius"] = UDim.new(0, 50);
 
-Ativodesativo.Name = "Ativo/desativo"
-Ativodesativo.Parent = AutoBox
-Ativodesativo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Ativodesativo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Ativodesativo.BorderSizePixel = 0
-Ativodesativo.Position = UDim2.new(-0.0871502236, 0, -0.198921457, 0)
-Ativodesativo.Size = UDim2.new(0, 304, 0, 37)
-Ativodesativo.Font = Enum.Font.Bangers
-Ativodesativo.Text = ""
-Ativodesativo.TextColor3 = Color3.fromRGB(0, 0, 0)
-Ativodesativo.TextSize = 25.000
+-- StarterGui.ScreenGui.menu.AutoFarm.AutoBox.Ativo/desativo.Status
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+G2L["8"]["Name"] = [[Status]];
 
-UICorner_2.CornerRadius = UDim.new(0, 50)
-UICorner_2.Parent = Ativodesativo
+-- StarterGui.ScreenGui.menu.Frame
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(155, 155, 155);
+G2L["9"]["Size"] = UDim2.new(0, 380, 0, 324);
+G2L["9"]["Position"] = UDim2.new(0.34655, 0, 0, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundTransparency"] = 0.75;
 
-Frame.Parent = menu
-Frame.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
-Frame.BackgroundTransparency = 0.750
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.346551716, 0, 0, 0)
-Frame.Size = UDim2.new(0, 380, 0, 324)
+-- StarterGui.ScreenGui.menu.Frame.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+G2L["a"]["CornerRadius"] = UDim.new(0, 25);
 
-UICorner_3.CornerRadius = UDim.new(0, 25)
-UICorner_3.Parent = Frame
+-- StarterGui.ScreenGui.menu.Teleports
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["LineHeight"] = 1.03;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 19;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["b"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["b"]["BackgroundTransparency"] = 0.45;
+G2L["b"]["Name"] = [[Teleports]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Teleports]];
+G2L["b"]["Position"] = UDim2.new(0.01724, 0, 0.22509, 0);
 
-Teleports.Name = "Teleports"
-Teleports.Parent = menu
-Teleports.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Teleports.BackgroundTransparency = 0.450
-Teleports.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Teleports.BorderSizePixel = 0
-Teleports.Position = UDim2.new(0.0172413792, 0, 0.225088522, 0)
-Teleports.Size = UDim2.new(0, 180, 0, 36)
-Teleports.Font = Enum.Font["LuckiestGuy"]
-Teleports.LineHeight = 1.030
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.TextSize = 19.000
+-- StarterGui.ScreenGui.menu.Teleports.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["c"]["CornerRadius"] = UDim.new(0, 50);
 
-UICorner_4.CornerRadius = UDim.new(0, 50)
-UICorner_4.Parent = Teleports
+-- StarterGui.ScreenGui.menu.Frame
+G2L["d"] = Instance.new("Frame", G2L["2"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Size"] = UDim2.new(0, 200, 0, 324);
+G2L["d"]["Position"] = UDim2.new(-0.00172, 0, 0, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BackgroundTransparency"] = 0.75;
 
-Frame_2.Parent = menu
-Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BackgroundTransparency = 0.750
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(-0.00172413792, 0, 0, 0)
-Frame_2.Size = UDim2.new(0, 200, 0, 324)
+-- StarterGui.ScreenGui.menu.Frame.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["CornerRadius"] = UDim.new(0, 25);
 
-UICorner_5.CornerRadius = UDim.new(0, 25)
-UICorner_5.Parent = Frame_2
+-- StarterGui.ScreenGui.menu.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["2"]);
+G2L["f"]["CornerRadius"] = UDim.new(0, 25);
 
-UICorner_6.CornerRadius = UDim.new(0, 25)
-UICorner_6.Parent = menu
+-- StarterGui.ScreenGui.menu.NameHub
+G2L["10"] = Instance.new("TextLabel", G2L["2"]);
+G2L["10"]["BorderSizePixel"] = 2;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["TextSize"] = 24;
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Text"] = [[UniqueHUB]];
+G2L["10"]["Name"] = [[NameHub]];
+G2L["10"]["Position"] = UDim2.new(0, 0, -0.03086, 0);
 
-NameHub.Name = "NameHub"
-NameHub.Parent = menu
-NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NameHub.BackgroundTransparency = 1.000
-NameHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
-NameHub.BorderSizePixel = 2
-NameHub.Position = UDim2.new(0, 0, -0.0308641978, 0)
-NameHub.Size = UDim2.new(0, 200, 0, 50)
-NameHub.Font = Enum.Font["FredokaOne"]  -- Atualizado para Fredoka One
-NameHub.Text = "UniqueHUB"
-NameHub.TextColor3 = Color3.fromRGB(0, 0, 0)
-NameHub.TextSize = 24.000
+-- StarterGui.ScreenGui.menu.MoveMenu
+G2L["11"] = Instance.new("LocalScript", G2L["2"]);
+G2L["11"]["Name"] = [[MoveMenu]];
 
-Credits.Name = "Credits"
-Credits.Parent = menu
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BackgroundTransparency = 1.000
-Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Credits.BorderSizePixel = 0
-Credits.Position = UDim2.new(0.377586216, 0, 0.0246913582, 0)
-Credits.Size = UDim2.new(0, 337, 0, 300)
+-- StarterGui.ScreenGui.menu.HideButtons
+G2L["12"] = Instance.new("LocalScript", G2L["2"]);
+G2L["12"]["Name"] = [[HideButtons]];
 
-Designer.Name = "Designer"
-Designer.Parent = Credits
-Designer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Designer.BackgroundTransparency = 1.000
-Designer.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Designer.BorderSizePixel = 0
-Designer.Position = UDim2.new(0.208728105, 0, 0.0439506024, 0)
-Designer.Size = UDim2.new(0, 203, 0, 44)
-Designer.Font = Enum.Font["FredokaOne"]
-Designer.Text = "Designer UI: Dexz"
-Designer.TextColor3 = Color3.fromRGB(255, 255, 255)
-Designer.TextSize = 19.000
+-- StarterGui.ScreenGui.menu.Credits
+G2L["13"] = Instance.new("Frame", G2L["2"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(0, 337, 0, 300);
+G2L["13"]["Position"] = UDim2.new(0.37759, 0, 0.02469, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Name"] = [[Credits]];
+G2L["13"]["BackgroundTransparency"] = 1;
 
-Scripter.Name = "Scripter"
-Scripter.Parent = Credits
-Scripter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Scripter.BackgroundTransparency = 1.000
-Scripter.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Scripter.BorderSizePixel = 0
-Scripter.Position = UDim2.new(0.244336411, 0, 0.127283931, 0)
-Scripter.Size = UDim2.new(0, 178, 0, 36)
-Scripter.Font = Enum.Font["FredokaOne"]
-Scripter.Text = "Scripter: Abix"
-Scripter.TextColor3 = Color3.fromRGB(255, 255, 255)
-Scripter.TextSize = 19.000
+-- StarterGui.ScreenGui.menu.Credits.Designer
+G2L["14"] = Instance.new("TextLabel", G2L["13"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["TextSize"] = 19;
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(0, 203, 0, 44);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Designer UI: Dexz]];
+G2L["14"]["Name"] = [[Designer]];
+G2L["14"]["Position"] = UDim2.new(0.20873, 0, 0.05728, 0);
 
-Discord.Name = "Discord"
-Discord.Parent = Credits
-Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Discord.BackgroundTransparency = 1.000
-Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Discord.BorderSizePixel = 0
-Discord.Position = UDim2.new(0.155557066, 0, 0.190825865, 0)
-Discord.Size = UDim2.new(0, 236, 0, 31)
-Discord.Font = Enum.Font["FredokaOne"]
-Discord.Text = "Discord: https://discord.gg/3ymdA2eA4U"
-Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
-Discord.TextSize = 19.000
+-- StarterGui.ScreenGui.menu.Credits.Scripter
+G2L["15"] = Instance.new("TextLabel", G2L["13"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextSize"] = 19;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Size"] = UDim2.new(0, 178, 0, 33);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Scripter: Dexz / VulgoMr71]];
+G2L["15"]["Name"] = [[Scripter]];
+G2L["15"]["Position"] = UDim2.new(0.24434, 0, 0.14728, 0);
 
-ImageButton.Parent = Credits
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BackgroundTransparency = 1.000
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.698026955, 0, 0.897833228, 0)
-ImageButton.Size = UDim2.new(0, 39, 0, 32)
-ImageButton.Image = "rbxassetid://12784884955"
+-- StarterGui.ScreenGui.menu.Credits.Discord
+G2L["16"] = Instance.new("TextLabel", G2L["13"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextSize"] = 19;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 271, 0, 45);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[discord.gg/dexzcommunity]];
+G2L["16"]["Name"] = [[Discord]];
+G2L["16"]["Position"] = UDim2.new(0.10784, 0, 0.25728, 0);
 
-UICorner_7.CornerRadius = UDim.new(0, 25)
-UICorner_7.Parent = ImageButton
+-- StarterGui.ScreenGui.ImageButton
+G2L["17"] = Instance.new("ImageButton", G2L["1"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Image"] = [[rbxassetid://18900809386]];
+G2L["17"]["Size"] = UDim2.new(0, 48, 0, 50);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Position"] = UDim2.new(0.06873, 0, 0.17892, 0);
 
--- Add animations for the buttons
-local function animateButton(button)
-	button.MouseEnter:Connect(function()
-		button:TweenSize(UDim2.new(0, 180, 0, 40), "Out", "Quad", 0.2, true)
-		button.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Cor de destaque
-	end)
-	button.MouseLeave:Connect(function()
-		button:TweenSize(UDim2.new(0, 180, 0, 36), "Out", "Quad", 0.2, true)
-		button.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Cor original
-	end)
-end
+-- StarterGui.ScreenGui.ImageButton.MoveIcon
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+G2L["18"]["Name"] = [[MoveIcon]];
 
--- Apply the animation to both buttons
-animateButton(AutoFarm)
-animateButton(Teleports)
+-- StarterGui.ScreenGui.ImageButton.HideMenu
+G2L["19"] = Instance.new("LocalScript", G2L["17"]);
+G2L["19"]["Name"] = [[HideMenu]];
 
--- Update fonts to "Luckiest Guy"
-local function updateButtonFont(button)
-	button.Font = Enum.Font["LuckiestGuy"]
-	button.TextSize = 19 -- Ajuste conforme necessário
-	button.TextColor3 = Color3.fromRGB(255, 255, 255) -- Ajuste conforme necessário
-end
+-- StarterGui.ScreenGui.ImageButton.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["17"]);
+G2L["1a"]["CornerRadius"] = UDim.new(0, 50);
 
--- Apply font changes to both buttons
-updateButtonFont(AutoFarm)
-updateButtonFont(Teleports)
-
--- Scripts:
-
-local function KDGJCP_fake_script() -- Ativodesativo.Status 
-	local script = Instance.new('LocalScript', Ativodesativo)
-
+-- StarterGui.ScreenGui.menu.AutoFarm.AutoBox.Ativo/desativo.Status
+local function C_8()
+local script = G2L["8"];
+	-- Script do botão para alternar o estado do autofarm
+	
 	local button = script.Parent
 	local isActive = false -- Estado inicial (desativado)
-
+	
 	-- Configurações do botão
 	local activeColor = Color3.fromRGB(0, 255, 0) -- Verde para ativado
 	local inactiveColor = Color3.fromRGB(255, 0, 0) -- Vermelho para desativado
-
+	
 	-- Atualiza o botão com base no estado
 	local function updateButton()
 		if isActive then
 			button.BackgroundColor3 = activeColor
-			button.Text = "AutoBox"
+			button.Text = "Desativar AutoBox"
 		else
 			button.BackgroundColor3 = inactiveColor
-			button.Text = "AutoBox"
+			button.Text = "Ativar AutoBox"
 		end
 	end
-
+	
 	-- Alterna o estado ao clicar no botão
 	button.MouseButton1Click:Connect(function()
 		isActive = not isActive
 		updateButton()
+	
+		-- Adicione a lógica de ativação/desativação do autofarm aqui
+		if isActive then
+			-- Iniciar o autofarm
+			autoFarm()
+		else
+			-- Parar o autofarm
+			autofarmEnabled = false
+		end
 	end)
-
+	
 	-- Configura o estado inicial do botão
 	updateButton()
-
-end
-coroutine.wrap(KDGJCP_fake_script)()
-local function UIRKJ_fake_script() -- menu.MoveMenu 
-	local script = Instance.new('LocalScript', menu)
-
+	
+	-- Variável de controle
+	local autofarmEnabled = false
+	
+	-- Função para teleportar com cuidado com animações
+	local function moveTo(position)
+		local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	
+		local activeTracks = humanoid:GetPlayingAnimationTracks()
+	
+		for _, track in ipairs(activeTracks) do
+			track:Stop()
+		end
+	
+		humanoidRootPart.CFrame = CFrame.new(position)
+	
+		for _, track in ipairs(activeTracks) do
+			track:Play()
+		end
+	end
+	
+	-- Função para coletar a caixa
+	local function collectBox()
+		local player = game.Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if humanoidRootPart then
+			-- Acessar o mapa correto
+			local mapName = "1# Map"  -- Nome do mapa que você deseja usar
+			for _, map in pairs(workspace:GetChildren()) do
+				if map.Name == mapName then
+					local meshes = map:FindFirstChild("2 Meshes")
+					if meshes then
+						local meshess = meshes:FindFirstChild("Meshess")
+						if meshess then
+							-- Buscar a Handle pelo MeshId
+							local handle = nil
+							for _, obj in pairs(meshess:GetChildren()) do
+								if obj:IsA("MeshPart") and obj.MeshId == "rbxassetid://17173724273" then
+									handle = obj
+									break
+								end
+							end
+	
+							if handle then
+								local proximityPrompt = handle:FindFirstChildOfClass("ProximityPrompt")
+								if proximityPrompt then
+									-- Simular a ativação do ProximityPrompt
+									proximityPrompt.ActionText = "Coletando..."  -- Opcional, para feedback visual
+									local success, errorMessage = pcall(function()
+										proximityPrompt:InputHoldBegin()  -- Simular a interação com o ProximityPrompt
+									end)
+									if not success then
+										handleError("Erro ao simular input: " .. errorMessage)
+										return false
+									end
+	
+									-- Esperar um tempo extra para garantir que a caixa foi pega
+									wait(2) -- Ajuste o tempo conforme necessário
+	
+									-- Equipar a Box
+									local backpack = player.Backpack
+									local tool = backpack:FindFirstChildWhichIsA("Tool")
+									if tool then
+										local box = backpack:FindFirstChild("Box")
+										if box and box:IsA("Tool") then
+											-- Verificar se a Box é o Tool correto pelo nome ou outras propriedades
+											local success, equipError = pcall(function()
+												player.Character:WaitForChild("Humanoid"):EquipTool(box)
+											end)
+											if not success then
+												handleError("Erro ao equipar a Box: " .. equipError)
+											end
+										else
+											handleError("Box não encontrada ou não é um Tool")
+										end
+									else
+										handleError("Nenhum Tool encontrado no Backpack")
+									end
+	
+									return true
+								else
+									handleError("ProximityPrompt não encontrado na Handle")
+								end
+							else
+								handleError("Handle com o MeshId especificado não encontrado em Meshess")
+							end
+						else
+							handleError("Meshess não encontrado em 2 Meshes")
+						end
+					else
+						handleError("2 Meshes não encontrado em " .. mapName)
+					end
+				end
+			end
+	
+			handleError("Mapa " .. mapName .. " não encontrado no Workspace")
+		else
+			handleError("HumanoidRootPart não encontrado")
+		end
+	
+		return false
+	end
+	
+	-- Posições de início e fim
+	local startPosition = Vector3.new(-1466.601318359375, 252.99972534179688, -596.7843017578125)
+	local endPosition = Vector3.new(-1535.427978515625, 252.99974060058594, -489.204833984375)
+	
+	-- Função do loop de autofarm
+	local function autoFarm()
+		autofarmEnabled = true
+		while autofarmEnabled do
+			-- Atualizar status na GUI
+			StatusLabel.Text = "Coletando a caixa..."
+	
+			-- Teleporta para pegar a caixa
+			moveTo(startPosition)
+			wait(1) -- Ajuste conforme necessário
+	
+			-- Coletar a caixa
+			if collectBox() then
+				-- Atualizar status na GUI
+				StatusLabel.Text = "Entregando a caixa..."
+	
+				-- Teleporta para entregar a caixa
+				moveTo(endPosition)
+				wait(1) -- Ajuste conforme necessário
+			else
+				StatusLabel.Text = "Erro ao coletar a caixa"
+			end
+	
+			-- Tempo entre loops
+			wait(2) -- Ajuste conforme necessário
+		end
+	end
+	
+	-- Função para lidar com erros
+	local function handleError(errorMessage)
+		if StatusLabel then
+			StatusLabel.Text = "Erro: " .. errorMessage
+		end
+		warn("Erro: " .. errorMessage)
+	end
+	
+	-- Configura o estado inicial do botão
+	updateButton()
+	
+end;
+task.spawn(C_8);
+-- StarterGui.ScreenGui.menu.MoveMenu
+local function C_11()
+local script = G2L["11"];
 	local menu = script.Parent
 	local userInputService = game:GetService("UserInputService")
 	local dragging = false
 	local dragStart
 	local startPos
-
+	
 	-- Função para atualizar a posição do menu
 	local function update(input)
 		local delta = input.Position - dragStart
 		menu.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-
+	
 	-- Quando o arrasto começa
 	menu.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = menu.Position
-
+	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -285,36 +439,36 @@ local function UIRKJ_fake_script() -- menu.MoveMenu
 			end)
 		end
 	end)
-
+	
 	-- Quando o arrasto está em andamento
 	menu.InputChanged:Connect(function(input)
 		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
 			update(input)
 		end
 	end)
-
+	
 	-- Quando o arrasto termina
 	userInputService.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = false
 		end
 	end)
-
-end
-coroutine.wrap(UIRKJ_fake_script)()
-local function UMDXZH_fake_script() -- menu.HideButtons 
-	local script = Instance.new('LocalScript', menu)
-
+	
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.menu.HideButtons
+local function C_12()
+local script = G2L["12"];
 	local autoFarmButton = script.Parent:WaitForChild("AutoFarm")
 	local teleportsButton = script.Parent:WaitForChild("Teleports")
-
+	
 	local autoBox = autoFarmButton:WaitForChild("AutoBox")
 	local creditsFrame = script.Parent:WaitForChild("Credits")
-
+	
 	-- Inicializa a visibilidade do AutoBox e uma variável para verificar se os créditos foram ocultados
 	autoBox.Visible = false
 	local creditsHidden = false
-
+	
 	-- Função para mostrar o AutoBox e ocultar outros menus
 	local function showAutoBox()
 		autoBox.Visible = true
@@ -323,7 +477,7 @@ local function UMDXZH_fake_script() -- menu.HideButtons
 			creditsHidden = true -- Marcar que os créditos foram ocultados
 		end
 	end
-
+	
 	-- Função para ocultar o AutoBox
 	local function hideAutoBox()
 		autoBox.Visible = false
@@ -332,35 +486,35 @@ local function UMDXZH_fake_script() -- menu.HideButtons
 			creditsHidden = true -- Marcar que os créditos foram ocultados
 		end
 	end
-
+	
 	-- Evento ao clicar no botão AutoFarm
 	autoFarmButton.MouseButton1Click:Connect(function()
 		showAutoBox() -- Exibe o AutoBox
 	end)
-
+	
 	-- Evento ao clicar no botão Teleports
 	teleportsButton.MouseButton1Click:Connect(function()
 		hideAutoBox() -- Oculta o AutoBox
 	end)
-
-end
-coroutine.wrap(UMDXZH_fake_script)()
-local function PNLAZ_fake_script() -- ImageButton.MoveIcon 
-	local script = Instance.new('LocalScript', ImageButton)
-
+	
+end;
+task.spawn(C_12);
+-- StarterGui.ScreenGui.ImageButton.MoveIcon
+local function C_18()
+local script = G2L["18"];
 	local button = script.Parent
 	local userInputService = game:GetService("UserInputService")
 	local dragging = false
 	local startPosition = UDim2.new(0, 0, 0, 0)
 	local startMousePosition = Vector2.new()
-
+	
 	-- Função para começar a arrastar o botão
 	local function startDragging(input)
 		dragging = true
 		startPosition = button.Position
 		startMousePosition = input.Position
 	end
-
+	
 	-- Função para arrastar o botão
 	local function drag(input)
 		if dragging then
@@ -368,50 +522,52 @@ local function PNLAZ_fake_script() -- ImageButton.MoveIcon
 			button.Position = UDim2.new(startPosition.X.Scale, startPosition.X.Offset + delta.X, startPosition.Y.Scale, startPosition.Y.Offset + delta.Y)
 		end
 	end
-
+	
 	-- Função para parar de arrastar o botão
 	local function stopDragging()
 		dragging = false
 	end
-
+	
 	-- Conectar eventos de início e fim de arrasto
 	button.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			startDragging(input)
 		end
 	end)
-
+	
 	userInputService.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			drag(input)
 		end
 	end)
-
+	
 	userInputService.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			stopDragging()
 		end
 	end)
-
-end
-coroutine.wrap(PNLAZ_fake_script)()
-local function NLJSO_fake_script() -- ImageButton.HideMenu 
-	local script = Instance.new('LocalScript', ImageButton)
-
+	
+end;
+task.spawn(C_18);
+-- StarterGui.ScreenGui.ImageButton.HideMenu
+local function C_19()
+local script = G2L["19"];
 	local button = script.Parent -- Referência ao ImageButton
 	local menu = button.Parent:WaitForChild("menu") -- Referência ao menu
-
+	
 	-- Inicializa a visibilidade do menu
 	local isMenuVisible = menu.Visible
-
+	
 	-- Função para alternar a visibilidade do menu
 	local function toggleMenuVisibility()
 		isMenuVisible = not isMenuVisible
 		menu.Visible = isMenuVisible
-	end
-
+	endisMenuVisible
+	
 	-- Conecta a função ao evento de clique do botão
 	button.MouseButton1Click:Connect(toggleMenuVisibility)
+	
+end;
+task.spawn(C_19);
 
-end
-coroutine.wrap(NLJSO_fake_script)()
+return G2L["1"], require;]
